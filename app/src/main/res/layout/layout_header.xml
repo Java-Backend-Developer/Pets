@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/bg_header">
+
+    <ImageView
+        android:id="@+id/header_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:contentDescription="@null"
+        android:onClick="onLeftClick"
+        android:src="@drawable/icon_back"
+        android:visibility="visible"
+        tools:ignore="RtlHardcoded"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:textColor="#11eeee"
+        android:textSize="20sp"
+        tools:text="个人主页" />
+
+    <ImageView
+        android:id="@+id/header_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:contentDescription="@null"
+        android:src="@drawable/icon_book"
+        android:visibility="gone"
+        android:onClick="onRightClick"
+        tools:ignore="RtlHardcoded"
+        tools:visibility="visible" />
+
+</RelativeLayout>
